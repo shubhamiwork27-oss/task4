@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body::selection{
+    display: none;
+    background-color: transparent;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: auto;
+    gap:20px;
+   background: linear-gradient(to bottom right,rgb(0, 221, 255),rgb(1, 1, 155),rgb(1, 1, 66));
+    height: 100%;
+  width: 100%;
+padding: 20px;
+position:relative;
+overflow-y: auto;
+z-index: 0;
+}
+@font-face {
+    font-family:cricket;
+    src: url(./Monoton/Monoton-Regular.ttf);
+}
+#head{
+    color: #ffffffcd;
+    text-align: center;
+    font-size:12vw;
+    position: absolute;
+    z-index: -1;
+    font-family: cricket;
+}
+#fa{
+    font-weight: 100;
+font-size: 250px;
+padding-top: 50px;
+}
+#fav{
+    color: rgba(0, 217, 255, 0.786);
+    padding-top: 120px;
+    font-family:cricket;
+    font-size: 200px;
+    font-weight: normal;
+}
+#cri{
+    padding-top: 50px;
+    font-family: cricket;
+    font-size: 140px;
+    font-weight:100;
+}
+#cri span{
+    color:rgba(0, 217, 255, 0.786) ;
+}
+#card1 h3, #card2 h3, #card3 h3, #card4 h3, #card5 h3, #card6 h3, #card7 h3, #card8 h3, #card9 h3, #card10 h3{
+    position: absolute;
+    z-index: 0;
+    margin-bottom: 380px;
+    font-family: cricket;
+    font-weight: 550;
+    text-shadow: 0px 0px  20px rgb(0, 0, 0);
+
+}
+#card1 h2, #card2 h2, #card3 h2, #card4 h2, #card5 h2, #card6 h2, #card7 h2, #card8 h2, #card9 h2, #card10 h2{
+    font-family: cricket;
+    font-weight: 550;
+    text-shadow: 0px 0px  20px rgb(0, 0, 0);
+}
+ #card1 button:hover, #card2 button:hover, #card3 button:hover, #card4 button:hover, #card5 button:hover, #card6 button:hover, #card7 button:hover, #card8 button:hover, #card9 button:hover, #card10 button:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px white;
+    color: #ffffff;
+    background: transparent;
+    border: 3px solid white;
+}
+#card1 button:active, #card2 button:active, #card3 button:active, #card4 button:active, #card5 button:active, #card6 button:active, #card7 button:active, #card8 button:active, #card9 button:active, #card10 button:active{
+    box-shadow: 0px 0px 10px white;
+    border: none;
+}
+ #card1 img:hover, #card2 img:hover, #card3 img:hover, #card4 img:hover, #card5 img:hover, #card6 img:hover, #card7 img:hover, #card8 img:hover, #card9 img:hover, #card10 img:hover{
+    transform: scale(1.1);
+}
+#card1{
+     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column ;
+    width: 280px;
+    height: 450px;
+    border-radius: 17px;
+    background: linear-gradient(to bottom ,rgba(255, 255, 255, 0.533),rgba(165, 163, 163, 0.379),rgba(2, 1, 73, 0.581));
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+#card1 h2,h3{
+    margin-top: -10px;
+}
+#card1 img{
+    transition: transform 0.3s ease;
+        border-radius: 10px;
+    object-fit: cover;
+    width: 250px;
+    height: 290px;
+     filter: drop-shadow(0px 0px 14px #ffffff);
+  -webkit-mask-position: bottom;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0, 0, 0, 0) 100%);
+}
+
+#card1 button{
+    width: 90%;
+    height: 7%;
+    background: linear-gradient(to bottom right,rgb(0, 221, 255),rgb(1, 1, 155),rgb(1, 1, 66));
+    border: 1px solid white;
+    border-radius: 40px;
+    color: white;
+    font-weight: 900;
+    font-family: monospace;
+    transition: ease-in-out 0.1s ;
+}
+
+#card2{
+     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column ;
+    width: 280px;
+    height: 450px;
+    border-radius: 17px;
+    background: linear-gradient(to bottom ,rgba(255, 255, 255, 0.533),rgba(165, 163, 163, 0.379),rgba(2, 1, 73, 0.581));
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 30px;
+}
+#card2 h2,h3{
+    margin-top: -10px;
+}
+#card2 img{
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    object-fit: cover;
+    width: 250px;
+    height: 290px;
+    filter: drop-shadow(0px 0px 14px #ffffff);
+  -webkit-mask-position: bottom;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0, 0, 0, 0) 100%);
+}
+
+#card2 button{
+    width: 90%;
+    height: 7%;
+    background: linear-gradient(to bottom right,rgb(0, 221, 255),rgb(1, 1, 155),rgb(1, 1, 66));
+    border: 1px solid white;
+    border-radius: 40px;
+    color: white;
+    font-weight: 900;
+    font-family: monospace;
+    transition: ease-in-out 0.1s ;
+
+}
+
+#card3{
+     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column ;
+    width: 280px;
+    height: 450px;
+    border-radius: 17px;
+    background: linear-gradient(to bottom ,rgba(255, 255, 255, 0.533),rgba(165, 163, 163, 0.379),rgba(2, 1, 73, 0.581));
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 30px;
+}
+#card3 h2,h3{
+    margin-top: -10px;
+}
+#card3 img{
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    object-fit: cover;
+    width: 250px;
+    height: 290px;
+    filter: drop-shadow(0px 0px 14px #ffffff);
+  -webkit-mask-position: bottom;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0, 0, 0, 0) 100%);
+}
+
+#card3 button{
+    width: 90%;
+    height: 7%;
+    background: linear-gradient(to bottom right,rgb(0, 221, 255),rgb(1, 1, 155),rgb(1, 1, 66));
+    border: 1px solid white;
+    border-radius: 40px;
+    color: white;
+    font-weight: 900;
+    font-family: monospace;
+    transition: ease-in-out 0.1s ;
+
+}
+
+#card4{
+     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column ;
+    width: 280px;
+    height: 450px;
+    border-radius: 17px;
+    background: linear-gradient(to bottom ,rgba(255, 255, 255, 0.533),rgba(165, 163, 163, 0.379),rgba(2, 1, 73, 0.581));
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+#card4 h2,h3{
+    margin-top: -10px;
+}
+#card4 img{
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    object-fit: cover;
+    width: 250px;
+    height: 290px;
+    filter: drop-shadow(0px 0px 14px #ffffff);
+  -webkit-mask-position: bottom;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0, 0, 0, 0) 100%);
+}
+
+#card4 button{
+    width: 90%;
+    height: 7%;
+    background: linear-gradient(to bottom right,rgb(0, 221, 255),rgb(1, 1, 155),rgb(1, 1, 66));
+    border: 1px solid white;
+    border-radius: 40px;
+    color: white;
+    font-weight: 900;
+    transition: ease-in-out 0.1s ;
+    font-family: monospace;
+
+}
+
+
+
+#card5{
+     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column ;
+    width: 280px;
+    height: 450px;
+    border-radius: 17px;
+    background: linear-gradient(to bottom ,rgba(255, 255, 255, 0.533),rgba(165, 163, 163, 0.379),rgba(2, 1, 73, 0.581));
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 30px;
+}
+#card5 h2,h3{
+    margin-top: -10px;
+}
+#card5 img{
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    object-fit: cover;
+    width: 250px;
+    height: 290px;
+    filter: drop-shadow(0px 0px 14px #ffffff);
+  -webkit-mask-position: bottom;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0, 0, 0, 0) 100%);
+}
+
+#card5 button{
+    width: 90%;
+    height: 7%;
+    background: linear-gradient(to bottom right,rgb(0, 221, 255),rgb(1, 1, 155),rgb(1, 1, 66));
+    border: 1px solid white;
+    border-radius: 40px;
+    color: white;
+    font-weight: 900;
+    font-family: monospace;
+    transition: ease-in-out 0.1s ;
+
+}
+
+::-webkit-scrollbar{
+    width: 10px;    
+    height: 12px;  
+}
+
+/* Scrollbar track (background) */
+::-webkit-scrollbar-track {
+    background: #f0f0f069;
+    border-radius: 10px;
+}
+
+/* Scrollbar thumb (draggable part) */
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 10px;
+
+}
+
+/* Hover effect on thumb */
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff75;
+}
