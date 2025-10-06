@@ -17,7 +17,8 @@ body::selection{
     flex-wrap: wrap;
     overflow: auto;
     gap:20px;
-   background: linear-gradient(to bottom right,rgb(0, 221, 255),rgb(1, 1, 155),rgb(1, 1, 66));
+   /* background: linear-gradient(to bottom right,rgb(0, 221, 255),rgb(1, 1, 155),rgb(1, 1, 66)); */
+    background: radial-gradient(rgb(18, 2, 123),rgb(0, 0, 0));
     height: 100%;
   width: 100%;
 padding: 20px;
@@ -43,15 +44,15 @@ font-size: 250px;
 padding-top: 50px;
 }
 #fav{
-    color: rgba(0, 217, 255, 0.786);
-    padding-top: 120px;
-    font-family:cricket;
+   padding-top: 120px;
     font-size: 200px;
     font-weight: normal;
 }
 #cri{
+      background: linear-gradient(90deg, #00d5ff9e 10%, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;   
     padding-top: 50px;
-    font-family: cricket;
     font-size: 140px;
     font-weight:100;
 }
@@ -110,7 +111,7 @@ padding-top: 50px;
     object-fit: cover;
     width: 250px;
     height: 290px;
-     filter: drop-shadow(0px 0px 14px #ffffff);
+     filter: drop-shadow(0px 0px 14px #000000);
   -webkit-mask-position: bottom;
   mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0, 0, 0, 0) 100%);
 }
@@ -150,7 +151,7 @@ padding-top: 50px;
     object-fit: cover;
     width: 250px;
     height: 290px;
-    filter: drop-shadow(0px 0px 14px #ffffff);
+    filter: drop-shadow(0px 0px 14px #000000);
   -webkit-mask-position: bottom;
   mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0, 0, 0, 0) 100%);
 }
@@ -191,7 +192,7 @@ padding-top: 50px;
     object-fit: cover;
     width: 250px;
     height: 290px;
-    filter: drop-shadow(0px 0px 14px #ffffff);
+    filter: drop-shadow(0px 0px 14px #000000);
   -webkit-mask-position: bottom;
   mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0, 0, 0, 0) 100%);
 }
@@ -233,7 +234,7 @@ padding-top: 50px;
     object-fit: cover;
     width: 250px;
     height: 290px;
-    filter: drop-shadow(0px 0px 14px #ffffff);
+    filter: drop-shadow(0px 0px 14px #000000);
   -webkit-mask-position: bottom;
   mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0, 0, 0, 0) 100%);
 }
@@ -276,7 +277,7 @@ padding-top: 50px;
     object-fit: cover;
     width: 250px;
     height: 290px;
-    filter: drop-shadow(0px 0px 14px #ffffff);
+    filter: drop-shadow(0px 0px 14px #000000);
   -webkit-mask-position: bottom;
   mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0, 0, 0, 0) 100%);
 }
